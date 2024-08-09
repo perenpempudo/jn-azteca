@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Jardin de Niños Azteca</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <header>
+
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+                text-align: center;
+            }
+            header {
+                background-color: #282c34;
+                color: white;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+                animation: titleAnimation 2s infinite alternate;
+            }
+            @keyframes titleAnimation {
+                from { color: #ffffff; }
+                to { color: #ff6347; }
+            }
+            .container {
+                padding: 20px;
+                margin-top: 60px; /* Para que el contenido no se oculte bajo el header */
+            }
+            .section {
+                margin-bottom: 20px;
+            }
+            .section img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+            }
+            audio {
+                display: none; /* Oculta el control del audio */
+            }
+            .section h2 {
+                font-size: 20px;
+                margin-top: 10px;
+                color: #555;
+            }
+        </style>
+        
+    </header>
+
+
+
+    <div class="container">
+   
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <head>
+ 
+   
+
+
+
+
+        <header>
+            <h1>Jardín de Niños Azteca</h1>
+        </header>
+    
+
+
+
+
+        <div class="container">
+            <section class="section">
+                <img src="media/imagen13.jpg" alt="Imagen 1">
+                <h2>Dia de Muertos</h2>
+            </section>
+            <section class="section">
+                <img src="media/imagen15.jpg" alt="Imagen 2">
+                <h2>Graduación</h2>
+            </section>
+            <section class="section">
+                <img src="media/imagen17.jpg" alt="Imagen 3">
+                <h2>Honores a la Bandera</h2>
+            </section>
+            <section class="section">
+                <img src="media/imagen20.jpg" alt="Imagen 4">
+                <h2>Bailes Regionales</h2>
+
+              
+                    <img src="media/imagen6.jpg" alt="Imagen 1">
+              
+    
+                
+                    <img src="media/imagen7.jpg" alt="Imagen 1">
+             
+    
+               
+                    <img src="media/imagen8.jpg" alt="Imagen 1">
+              
+    
+       
+                    <img src="media/imagen9.jpg" alt="Imagen 1">
+       
+    
+                    <img src="media/imagen10.jpg" alt="Imagen 1">
+          
+
+            </section>
+
+        </div>
+    
+        <audio autoplay loop>
+            <source src="sonido-de-fondo.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento <code>audio</code>.
+        </audio>
+    
+        <script>
+            // Función para prevenir el clic derecho
+            function disableRightClick(event) {
+                if (event.button === 2) { // El botón 2 corresponde al clic derecho
+                    event.preventDefault();
+                    alert('El clic derecho está desactivado en esta página.');
+                }
+            }
+    
+            // Añadir el manejador de eventos para el clic derecho
+            document.addEventListener('contextmenu', disableRightClick);
+        </script>
+
+    
+
+
+</body>
+</html>

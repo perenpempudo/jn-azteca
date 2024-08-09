@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <style>
+        .marquee-text {
+            color: red; /* Color del texto */
+            font-size: 48px; /* Tamaño de fuente */
+            font-family: Arial, sans-serif; /* Fuente del texto */
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardin de Niños "Azteca"</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Elemento de audio de fondo -->
+    <audio id="background-audio" src="media/1.mp3" autoplay loop></audio>
+
+    <div class="container">
+        <div class="marquee">
+            <marquee class="marquee-text" behavior="scroll" direction="left" scrollamount="5" >
+                El Jardín de Niños Azteca esta comprometido a potencializar 
+                las capacidades, habilidades, conocimientos y actitudes de los niños y 
+                niñas a través de las Artes, Danza y Juego.
+                </marquee>
+
+        </div>
+        <div class="carousel">
+            <!-- Los elementos multimedia estarán aquí -->
+
+
+            <div class="carousel-item">
+                <img src="media/imagen1.jpg" alt="Imagen 1">
+            </div>
+
+            <div class="carousel-item">
+                <video src="media/video7.mp4" type="video/mp4" controls autoplay muted></video>
+            </div>
+
+            <div class="carousel-item">
+                <video src="media/video8.mp4" type="video/mp4" controls autoplay muted></video>
+            </div>
+
+            <div class="carousel-item">
+                <video src="media/video6.mp4" type="video/mp4" controls autoplay muted></video>
+            </div>
+
+
+
+            <div class="carousel-item">
+                <img src="media/imagen2.jpg" alt="Imagen 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="media/imagen3.jpg" alt="Imagen 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="media/imagen4.jpg" alt="Imagen 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="media/imagen5.jpg" alt="Imagen 1">
+            </div>
+
+
+
+
+
+            <!-- Repite el bloque anterior para las demás imágenes (30 imágenes en total) -->
+            <div class="carousel-item">
+                <video src="media/video1.mp4" type="video/mp4" controls autoplay muted></video>
+            </div>
+
+            <div class="carousel-item">
+                <video src="media/video2.mp4" type="video/mp4" controls autoplay muted></video>
+            </div>
+
+            <div class="carousel-item">
+                <video src="media/video3.mp4" type="video/mp4" controls autoplay muted></video>
+            </div>
+
+
+            <!-- Repite el bloque anterior para los demás videos (5 videos en total) -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Función para prevenir el clic derecho
+        function disableRightClick(event) {
+            if (event.button === 2) { // El botón 2 corresponde al clic derecho
+                event.preventDefault();
+                alert('El clic derecho está desactivado en esta página. Jardín de Niños Azteca');
+            }
+        }
+
+        // Añadir el manejador de eventos para el clic derecho
+        document.addEventListener('contextmenu', disableRightClick);
+    </script>
+
+</body>
+</html>

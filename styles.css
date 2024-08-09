@@ -1,0 +1,64 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('./media/star.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 40%; /* Tamaño del carrusel al 50% */
+    margin: 0 auto;
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+    height: auto; /* Ajusta automáticamente la altura */
+}
+
+.carousel-item img, .carousel-item video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
